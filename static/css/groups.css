@@ -1,0 +1,63 @@
+body{
+    background: rgb(240, 240, 240   );
+}
+div.groups{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+div.in-groups{
+    /* border: 1px solid red; */
+    margin: 10px;
+    width: 80%;
+}
+
+div.groups-title{
+    margin: 10px 0;
+}
+div.groups-title > *{
+    margin: 10px 0;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+div.groups-invitations{
+    background-color: #ffffff;
+    /* border: 1px solid red; */
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #999999;
+    padding: 20px 10px;
+}
+div.groups-invitations > div.group{
+    height: max-content;
+    display: flex;
+    width: 60%;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 2px;
+}
+div.groups-invitations > div.group > a, span{
+    /* border: 1px solid red; */
+    color: #afc1c5;
+    margin-right: 10px;
+    /* text-decoration: none; */
+    background-color: #0cb3ca;
+    background-color: #39424e;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+div.groups-invitations > div.group > a{
+    width: 60%;
+}
+div.groups-invitations > div.group > a.trash{
+    background-color: transparent;
+    color: white;
+    background-color: red;
+    width: max-content;
+}

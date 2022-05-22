@@ -1,0 +1,68 @@
+html, body{
+    height: 100%;
+    overflow: hidden;
+}
+div.group{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    background-image: linear-gradient(to right, #6454c6, #b051bd);
+    height: 100%;
+}
+
+div.in-group{
+    /* border: 1px solid blue; */
+    border-radius: 5px;
+    flex-basis: 80%;
+    background-color: white;
+    overflow: scroll;
+    max-height: 500px;
+    margin-top: -180px;
+}
+
+div.in-group > table{
+    /* border: 1px solid green; */
+    border-collapse: collapse;
+    width: 100%;
+    overflow: scroll;
+    position: relative;
+}
+div.in-group > table > thead{
+    background-color: #39424e;
+    color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+div.in-group > table > thead a{
+    color: white;
+}
+
+div.in-group > table > tbody > tr:nth-child(even){
+    background-color: #f3f3f3;
+}
+
+
+div.in-group > table th, td{
+    padding: 10px;
+    min-width: 200px;
+}
+
+div.in-group > table td > a.success{
+    color: green;
+}
+div.in-group > table td > a.nosuccess{
+    color: red;
+}
+div.in-group > table td > a > i{
+    margin-left: 14px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+}

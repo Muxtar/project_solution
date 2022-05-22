@@ -1,0 +1,174 @@
+html, body{
+    height: 91%;
+}
+body{
+}
+
+div.main-user{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    background-color: #f3f7f7;
+}
+
+div.user-account{
+    flex-basis: 35%;
+    height: max-content;
+    /* border: 1px solid red; */
+    margin-top: -12px;
+}
+
+div.user-account > div{
+    /* border: 1px solid red; */
+}
+
+div.title > *{
+    text-align: center;
+    bor
+}
+
+div.title > h1{
+    /* font-weight: bold;
+    font-size: 50px; */
+}
+
+div.forms{
+    background-color: #ffffff;
+    box-shadow:  0 0 10px 0 rgb(200, 200, 200);
+}
+
+div.forms > div.change{
+    /* border: 1px solid red; */
+    display: flex;
+}
+div.forms > div.change > div{
+    /* border: 1px solid red; */
+    flex-basis: 50%;
+    text-align: center;
+}
+div.forms > div.change > div > button{
+    background-color: transparent;
+    border: none;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    color: #0e141e;
+    font-weight: 800px;
+    width: 100%;
+    text-align: center;
+    color: rgb(100, 100, 100);
+}
+
+
+div.forms > div.change > div.sign-title{
+    background-image: linear-gradient(to right, rgb(245, 245, 245), white);
+}
+
+div.forms > div.change > div.login-title{
+    box-shadow: 0 0 5px rgba(0,0,0,0.75);
+    clip-path: inset(0px -15px 0px 0px);
+}
+
+div.forms > div.form > form > div{
+    padding: 10px;
+}
+div.forms > div.form > form > div > div{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 15px 10px;
+}
+div.forms > div.form > form > div > div.inp{
+    border: 2px solid rgb(220, 220, 220);
+    margin: 30px 10px;
+}
+div.forms > div.form > form > div > div > input{
+    display: block;
+    /* position: relative; */
+    padding: 13px;
+    width: 100%;
+    padding-left: 45px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+div.forms > div.form > form > div > div > input:focus{
+    /* border-bottom: 2px solid rgb(200, 200, 200); */
+}
+
+div.forms > div.form > form > div > div > input::placeholder{
+    color: rgb(100, 100, 100);
+}
+div.forms > div.form > form > div > div > input[type=submit]{
+    background-color: #1ba94c;
+    color: white;
+    border: none;
+    width: max-content;
+    padding-left: 0;
+    padding: 10px;
+    width: 100px;
+    border-radius: 2px;
+    font-size: 18px;
+    box-shadow: 0 0 5px 0 #1ba94c;
+}
+
+input#remember{
+    /* -moz-appearance:none;     */
+    width: 18px;
+    height: 18px;
+}
+
+
+div.forms > div.form > form > div > div > i{
+    display: block;
+    position: absolute;
+    font-size: 22px;
+    color: rgb(150, 150, 150);
+    /* border: 1px solid red; */
+    padding: 13px;
+}
+
+
+div.forms > div.form  div.remember{
+    /* border: 3px solid blue; */
+    display: flex;
+}
+div.forms > div.form  div.remember > div{
+    flex-basis: 50%;
+    /* border: 1px solid red; */
+}
+div.forms > div.form  div.remember > div > a.forget{
+    display: block;
+    text-align: right;
+    padding-right: 5px;
+    /* background-color: red; */
+}
+
+
+
+img.social{
+    width: 40px;
+    height: 40px;
+}
+
+
+div.socials{
+    display: flex;
+    justify-content: center ;
+    padding: 15px;
+    /* border: 1px solid red; */
+}
+div.socials > div{
+    border-right: 1px solid rgb(220, 220, 220);
+    padding: 10px 20px;
+    /* border: 1px solid red; */
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
