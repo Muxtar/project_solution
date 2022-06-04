@@ -1,5 +1,6 @@
 html, body{
-    height: 91%;
+    height: 100%;
+
 }
 body{
 }
@@ -7,30 +8,26 @@ body{
 div.main-user{
     display: flex;
     justify-content: center;
-    height: 100%;
+    height: 640px;
     align-items: center;
-    background-color: #f3f7f7;
 }
 
 div.user-account{
     flex-basis: 35%;
     height: max-content;
-    /* border: 1px solid red; */
-    margin-top: -12px;
 }
 
 div.user-account > div{
-    /* border: 1px solid red; */
 }
 
-div.title > *{
+div.title-accounts > *{
     text-align: center;
-    bor
+    display: block;
 }
 
-div.title > h1{
-    /* font-weight: bold;
-    font-size: 50px; */
+div.title-accounts > h1{
+    font-weight: bold;
+    font-size: 50px;
 }
 
 div.forms{
@@ -47,7 +44,7 @@ div.forms > div.change > div{
     flex-basis: 50%;
     text-align: center;
 }
-div.forms > div.change > div > button{
+div.forms > div.change > div > a{
     background-color: transparent;
     border: none;
     display: block;
@@ -58,12 +55,14 @@ div.forms > div.change > div > button{
     font-weight: 800px;
     width: 100%;
     text-align: center;
+    cursor: pointer;
     color: rgb(100, 100, 100);
 }
 
 
 div.forms > div.change > div.sign-title{
     background-image: linear-gradient(to right, rgb(245, 245, 245), white);
+    /* background-color: red; */
 }
 
 div.forms > div.change > div.login-title{
@@ -171,4 +170,9 @@ footer{
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+div.forms div.disable{
+    display: none;
+    /* border: 1px solid red; */
 }

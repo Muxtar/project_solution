@@ -1,99 +1,78 @@
 header{
     display: flex;
     justify-content: center;
-    /* background-color: #2f2f2f; */
     background-color: #39424e;
 }
+
 header > nav{
-    width: 90%;
-    padding: 10px;
+    flex-basis: 90%;
 }
 
 header > nav > ul{
+    display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+header > nav > ul > li{
     display: flex;
     align-items: center;
 }
-header > nav > ul > li{
+header > nav > ul > li.user > a{
+    background-color: orange;
+    color: white;
+    border-radius: 0;
 }
 
-header > nav > ul > li:nth-child(1){
+header > nav > ul > li:first-child{
     flex-grow: 1;
-}
-header > nav > ul > li.user{
-    width: max-content;
-    color: rgb(200, 200, 200);
-    margin-left: 10px;
-}
-header > nav > ul > li.user > img{
-    width: 33px;
-    height: 35px;
-    margin-right: 5px;
-    border-radius: 3px;
-}
-header > nav > ul > li.user a{
-    text-decoration: none;
-    color: rgb(200, 200, 200);
-}
-
-header > nav > ul > li.user > div.profile{
-    width: 200px;
-    height: max-content;
-    position: absolute;
-    top: 73px;
-    right: 40px;
-    border: 1px solid rgb(200, 200, 200);
-    /* display: none; */
-    background-color: white;
-}
-
-header > nav > ul > li.user > div.profile > ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    padding: 10px;
-}
-header > nav > ul > li.user > div.profile > ul > li > a{
-    display: block;
-    /* text-align: center; */
-    color: rgb(100, 100, 100);
-    padding: 15px;
-    border-bottom: 1px solid rgb(200, 200, 200);
-    font-weight: 200;
-}
-header > nav > ul > li.user > div.profile > ul > li:last-child > a{
-    border-bottom: none;
-}
-header > nav > ul > li.user > div.profile > ul > li > a:hover{
-    color: rgb(10, 10, 10);
 }
 
 header > nav > ul > li > a{
-    display: block;
-    padding: 8px 20px;
-    margin: 0 10px;
     text-decoration: none;
-    /* color: white; */
-    color: #b7c9cc;
-    font-weight: 300;
-    width: max-content;
+    color: rgb(200, 200, 200);
+    padding: 10px 20px;
+    margin: 0 10px;
     border-radius: 20px;
-    transition: 0.5s background-color, 0.5s color;
+    display: block;
+    transition: 0.5s background-color;
 }
-header > nav > ul > li > a.signup{
-    background-color: #e89518;
-    border-radius: 5px;
-}
-
-
 header > nav > ul > li > a:hover{
     background-color: white;
     color: black;
 }
 
-header > nav > ul > li > a.site-name:hover{
-    background-color: transparent;
-    color: rgb(200, 200, 200);
+header > nav > ul > li > a > i{
+    display: block;
+    text-align: center;
+}
+header > nav > ul > li{
+    position: relative;
+    padding: 10px 0;
+}
+header > nav > ul > li.user:hover > ul{
+    display: block;
+}
+
+header > nav > ul > li > ul{
+    border: 1px solid rgb(200, 200, 200);
+    position: absolute;
+    top: 85px;
+    right: -50px;
+    width: 180px;
+    background-color: white;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    display: none;
+}
+header > nav > ul > li > ul > li{
+}
+
+header > nav > ul > li > ul > li > a{
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    color: rgb(100, 100, 100);
 }

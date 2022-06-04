@@ -4,5 +4,6 @@
     box-sizing: border-box;
 }
 
-html{}
-body{}
+div.index{
+    padding: 10px 100px;
+}

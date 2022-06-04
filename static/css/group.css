@@ -1,19 +1,16 @@
-html, body{
-    height: 100%;
-    overflow: hidden;
-}
-div.group{
-    /* border: 1px solid red; */
+div.main-group{
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px 10px;
     background-image: linear-gradient(to right, #6454c6, #b051bd);
     height: 100%;
+    border: 5px solid red;
 }
 
-div.in-group{
-    /* border: 1px solid blue; */
+div.main-group-in{
+    border: 1px solid blue;
     border-radius: 5px;
     flex-basis: 80%;
     background-color: white;
@@ -22,25 +19,25 @@ div.in-group{
     margin-top: -180px;
 }
 
-div.in-group > table{
+div.main-group-in > table{
     /* border: 1px solid green; */
     border-collapse: collapse;
     width: 100%;
     overflow: scroll;
     position: relative;
 }
-div.in-group > table > thead{
+div.main-group-in > table > thead{
     background-color: #39424e;
     color: white;
     position: sticky;
     top: 0;
     width: 100%;
 }
-div.in-group > table > thead a{
+div.main-group-in > table > thead a{
     color: white;
 }
 
-div.in-group > table > tbody > tr:nth-child(even){
+div.main-group-in > table > tbody > tr:nth-child(even){
     background-color: #f3f3f3;
 }
 

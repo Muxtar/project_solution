@@ -1,0 +1,26 @@
+<header>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}" class="site-name" style="color: orange; font-weight: bold; font-size: 30px;">Solutions</a></li>
+            <li><a href="{% url 'problems' %}">Problems</a></li>
+            <li><a href="">Forms</a></li>
+            <!-- <li><a href="" class="signup">Signup</a></li> -->
+           
+            {% if user.is_authenticated %}
+                <li><a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-bell"></i></a></li>
+                <li class="user">
+                    <a href="">Profile</a>
+                    <ul>
+                        <li><a href="{% url 'profile' %}">Profile</a></li>
+                        <li><a href="groups.html">Groups</a></li>
+                        <li><a href="">Settings</a></li>
+                        <li><a href="{% url 'logout' %}" style="color: red;">Logout</a></li>
+                    </ul>
+                </li>
+            {% else %}
+                <li class="user"><a href="{% url 'login' %}">Login</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+</header> 

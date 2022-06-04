@@ -1,6 +1,5 @@
 *{
     box-sizing: border-box;
-
 }
 html, body{
     height: 100%;
@@ -9,30 +8,33 @@ html, body{
 
 div.content{
     display: flex;
-    height: 90%;
+    height: 640px;
     overflow: cursor;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 div.content > div{
     flex-basis: 50%;
-    height: 80%;
     padding: 10px;
     margin: 0 5px;
     background-color: white;
-    overflow: auto;
+    overflow: scroll;
 
 }
+
 div.content > div.desc{
     overflow: scroll;
     height: 100%;
 }
+
 div.content > div.desc > div{
-    /* border: 1px solid red; */
     padding: 10px;
     margin: 10px 5px;
     height: max-content;
     color: #617179;
 }
+
 div.content > div.desc > div.sample{
     background-color: #e7eeef;
     box-shadow: 0 0 2px 0 rgb(200, 200, 200);
@@ -41,35 +43,33 @@ div.content > div.desc > div.sample{
     padding: 20px;
     border-radius: 0;
 }
+
 div.content > div.desc > div.sample > *{
     margin: 5px 5px 15px 5px;
 }
 
 div.content > div.desc > div.example{
-    /* border: 1px solid red; */
     padding: 0;
 }
+
 div.content > div.desc > div.example > div{
     background-color: #3e3e3e;
     color: #e89518;
-    /* color: white; */
     padding: 20px;
     margin: 5px 0;
     border-radius: 5px;
 }
-/* -------- */
 
 div.content > div.compiler{
     background-color: transparent;
-    height: 100%;
     margin: 0;
     padding: 0 5px;
-    display: none;
 }
 
 div.content > div.compiler > form{
     box-shadow: 0 0 20px 0  rgb(200, 200, 200);
-    height: 90%;
+    height: 83%;
+    position: relative;
 }
 
 
@@ -79,14 +79,16 @@ div.content > div.compiler > form > div > textarea{
     height: 100%;
     outline: none;
     border: none;
+    padding: 10px 20px; 
 }
+
 div.content > div.compiler > form > div.buttons{
-    /* border: 1px solid red; */
     margin-top: 10px;
     position: absolute;
     right: 0;
     display: flex;
 }
+
 div.content > div.compiler > form > div > button{
     display: block;
     padding: 10px;
@@ -97,38 +99,46 @@ div.content > div.compiler > form > div > button{
     box-shadow: 0 0 10px 0 rgb(200, 200, 200);
     margin: right;
 }
+
 div.content > div.compiler > form > div > button.test{
     background-color: white;
     color:rgb(100, 100, 100);
 }
 
 
-/* ------------------------ */
 div.content > div.user{
-    /* border: 5px solid red; */
     border: none;
     display: flex;
     width: 10%;
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    /* background-color: green; */
 }
+
 div.content > div.user a{
     display: block;
     padding: 10px 20px;
     text-decoration: none;
-    /* background-color: #1ba94c; */
-    /* color: white; */
     color: rgb(100, 100, 100);
-    /* color: green; */
     box-shadow: 0 0 10px 0 rgb(200, 200, 200);
     border-radius: 2px;
     border: 1px solid rgb(200, 200, 200);
 }
+/*
 div.content > div.user a:hover{
     color: rgb(50, 50, 50);
     color: #1ba94c;
     box-shadow: 0 0 10px 0 #1ba94c;
+}  */
+div.content > div.desc > div.example{
+    position: relative;
+}
+div.content > div.desc > div.example > div.output{
+    background-color: #1ba94c;
+    border-top-left-radius: 10px;
+    /* box-shadow: 0 0 10px 0 black; */
+    border-bottom-right-radius: 10px;
+
+    color: white;
 }
 

@@ -5,6 +5,7 @@ let divLogin = document.getElementsByClassName('login-title')[0];
 let divSign = document.getElementsByClassName('sign-title')[0];
 
 function change(param){
+    history.pushState(null, null, param.getAttribute('data-link'));
     if(param.innerText == 'Log in'){
         divFormSign.style.display = 'none';
         divFormLogin.style.display = 'block';
@@ -39,3 +40,21 @@ function borderBottom(param){
 function removeBottom(param){
     param.parentNode.style.borderBottom = '2px solid rgb(220, 220, 220)'
 }
+
+
+function start(){
+    if(window.location.href == 'http://127.0.0.1:8000/accounts/register/'){
+        divFormSign.style.display = 'block';
+        divFormLogin.style.display = 'none';
+
+       divSign.style.backgroundImage = 'none'
+       divSign.style.boxShadow = '0 0 5px rgba(0,0,0,0.75)';
+       divSign.style.clipPath = 'inset(0px 0px 0px -15px)'
+
+       divLogin.style.boxShadow = 'none';
+       divLogin.style.clipPath = 'none';
+       divLogin.style.backgroundImage = 'linear-gradient(to right, rgb(245, 245, 245), white)'
+
+    }
+}
+start()
